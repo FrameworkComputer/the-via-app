@@ -10,7 +10,7 @@ on:
 jobs:
   build_and_deploy_job:
     runs-on: ubuntu-latest
-    name: Build and Deploy Job
+    name: Build and Upload Job
     steps:
       - uses: actions/checkout@v3
         with:
@@ -19,10 +19,11 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
-      - name: Build
-        run: npm run build:azure
+      - name: Build and tar
+        run: |
+          npm run build:azure
+          tar caf framework_via_app.tar.gz dist/
       - name: Upload
         uses: actions/upload-artifact@v3
         with:
-          name: framework_via_app
-          path: dist/
+          path: framework_via_app.tar.gz
