@@ -1,5 +1,6 @@
 {
   "license": "GPL-3.0",
+  "name": "framework-laptop16-via",
   "scripts": {
     "dev": "node scripts/build-definitions.js && vite --force",
     "build": "bun run build:kbs && tsc && vite build",
