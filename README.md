@@ -1,6 +1,8 @@
-# Framework Laptop 16 Keyboard Input Module Bud
+# Framework Laptop 16 Keyboard Input Module VIA
 
-Framework fork of [VIA](https://www.caniusevia.com/) for the Laptop 16 Keyboard Inpu tModule. Plug in your keyboard and configure it, all from your browser.
+[View it in your browser.](https://keyboard.frame.work)
+
+Framework fork of [VIA](https://www.caniusevia.com/) for the Laptop 16 Keyboard Input Module. Plug in your keyboard and configure it, all from your browser.
 
 ![android-chrome-192x192](https://user-images.githubusercontent.com/1714072/222621960-ddfb8ee6-a486-4c66-8852-b204ba7c807b.png)
 
