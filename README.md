@@ -21,11 +21,6 @@ You will also see any lint errors in the console.
 Builds a static copy of your site to the `build/` folder.
 Your app is ready to be deployed!
 
-### `bun run test`
-
-Launches the application test runner.
-Run with the `--watch` flag (`bun test -- --watch`) to run in interactive watch mode.
-
 ## Contributing
 
 Contributions are welcome! Submit pull requests to the `framework16` branch.
