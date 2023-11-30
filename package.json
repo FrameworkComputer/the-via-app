@@ -1,5 +1,6 @@
 {
   "license": "GPL-3.0",
+  "name": "framework-laptop16-via",
   "scripts": {
     "start": "concurrently --names \"vite,azure-fn-dev\" -c \"bgBlue,bgMagenta\" \"npm run dev\" \"npm --prefix api start\"",
     "dev": "node scripts/build-definitions.js && vite --force",
