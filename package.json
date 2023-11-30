@@ -8,7 +8,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
     "refresh-kbs": "bun uninstall --force via-keyboards && bun install --force github:FrameworkComputer/the-via-keyboards#framework16",
-    "build:azure": "bun run refresh-kbs && bun run build",
+    "build:dist": "bun run refresh-kbs && bun run build",
     "preview": "vite preview",
     "build:kbs": "via-keyboards public/definitions",
     "find-deadcode": "ts-prune"
