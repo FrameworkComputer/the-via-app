@@ -20,16 +20,10 @@ export const ExternalLinks = () => (
         <CategoryMenuTooltip>Firmware + Docs</CategoryMenuTooltip>
       </CategoryIconContainer>
     </a>
-    <a href="https://discord.gg/NStTR5YaPB" target="_blank">
-      <CategoryIconContainer>
-        <FontAwesomeIcon size={'xl'} icon={faDiscord} />
-        <CategoryMenuTooltip>Discord</CategoryMenuTooltip>
-      </CategoryIconContainer>
-    </a>
-    <a href="https://github.com/the-via/app" target="_blank">
+    <a href="https://github.com/FrameworkComputer/the-via-app" target="_blank">
       <CategoryIconContainer>
         <FontAwesomeIcon size={'xl'} icon={faGithub} />
-        <CategoryMenuTooltip>Github</CategoryMenuTooltip>
+        <CategoryMenuTooltip>GitHub</CategoryMenuTooltip>
       </CategoryIconContainer>
     </a>
   </ExternalLinkContainer>
