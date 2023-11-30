@@ -1,0 +1,39 @@
+name: 'deploy'
+
+on:
+  push:
+    branches:
+      - framework16
+  pull_request:
+    types: [assigned, opened, synchronize, reopened]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+concurrency:
+  group: 'deploy'
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+          node-version: 18
+      - run: npm i
+      - run: npm run build:dist
+      - uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_PAGES_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: framework-keyboard-via
+          directory: './dist'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

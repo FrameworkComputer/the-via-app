@@ -24,3 +24,7 @@ Your app is ready to be deployed!
 ## Contributing
 
 Contributions are welcome! Submit pull requests to the `framework16` branch.
+
+## Hosting
+
+The application is hosted on Cloudflare Pages and uploaded the `deploy` GitHub Action.
