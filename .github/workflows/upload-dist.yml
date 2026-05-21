@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Upload Job
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
         with:
           submodules: true
       - uses: actions/setup-node@v3
@@ -24,6 +24,6 @@ jobs:
           npm run build:azure
           tar caf framework_via_app.tar.gz dist/
       - name: Upload
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v6
         with:
           path: framework_via_app.tar.gz
